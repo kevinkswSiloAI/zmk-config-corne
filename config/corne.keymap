@@ -96,14 +96,21 @@
         git_status: git_status {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp I &kp T &kp SPACE &kp S &kp T &kp A &kp T &kp U &kp S>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp S &kp T &kp A &kp T &kp U &kp S &kp ENTER>;
             label = "GIT_STATUS";
         };
 
-        git_commit_all: git_commit_all {
+        git_add_p: git_add_p {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp A &kp MINUS &kp M &kp SPACE &kp DQT &kp DQT &kp LEFT_ARROW>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp A &kp D &kp D &kp SPACE &kp MINUS &kp P &kp ENTER>;
+            label = "GIT_ADD_P";
+        };
+
+        git_commit: git_commit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp RET>;
             label = "GIT_COMMIT";
         };
     };
@@ -153,9 +160,9 @@
 
         Coding {
             bindings = <
-&none  &trans  &trans           &trans       &trans     &trans      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp PLUS           &kp ASTRK      &none
-&none  &trans  &git_commit_all  &git_status  &kp TILDE  &kp PIPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT    &kp DOUBLE_QUOTES  &kp GRAVE      &none
-&none  &trans  &trans           &trans       &trans     &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS  &kp UNDER          &kp BACKSLASH  &none
+&none  &trans       &trans      &trans       &trans     &trans      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp PLUS           &kp ASTRK      &none
+&none  &git_commit  &git_add_p  &git_status  &kp TILDE  &kp PIPE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT    &kp DOUBLE_QUOTES  &kp GRAVE      &none
+&none  &trans       &trans      &trans       &trans     &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS  &kp UNDER          &kp BACKSLASH  &none
                                 &trans       &trans     &trans      &trans                &trans                 &trans
             >;
 
