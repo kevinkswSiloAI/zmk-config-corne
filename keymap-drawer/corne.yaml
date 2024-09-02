@@ -226,7 +226,7 @@ combos:
   k: CLCK
 - p: [3, 4]
   k: TAB
-- p: [3, 4]
+- p: [3, 2]
   k: Sft+ TAB
 - p: [7, 8]
   k: BACKSPACE
