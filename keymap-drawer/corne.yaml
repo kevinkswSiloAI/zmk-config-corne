@@ -186,8 +186,8 @@ layers:
   - '*'
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - '&git_commit_all'
+  - '&git_commit'
+  - '&git_add_p'
   - '&git_status'
   - '~'
   - '|'
