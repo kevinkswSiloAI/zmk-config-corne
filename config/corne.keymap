@@ -95,6 +95,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
         };
+
+        Mute {
+            bindings = <&kp K_MUTE>;
+            key-positions = <5 6>;
+        };
     };
 
     macros {
