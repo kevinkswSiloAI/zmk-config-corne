@@ -240,3 +240,5 @@ combos:
   k: LEFT CONTROL
 - p: [25, 26]
   k: Gui+Ctl+ Q
+- p: [1, 2]
+  k: ESCAPE
