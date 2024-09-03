@@ -242,3 +242,5 @@ combos:
   k: Gui+Ctl+ Q
 - p: [1, 2]
   k: ESCAPE
+- p: [5, 6]
+  k: MUTE
