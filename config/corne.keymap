@@ -86,9 +86,9 @@
             key-positions = <27 28>;
         };
 
-        Screenshot {
+        Lock-Screen {
             bindings = <&kp LG(LC(Q))>;
-            key-positions = <25 26>;
+            key-positions = <9 10>;
         };
 
         Escape {
@@ -99,6 +99,11 @@
         Mute {
             bindings = <&kp K_MUTE>;
             key-positions = <5 6>;
+        };
+
+        Screenshot {
+            bindings = <&kp LS(LG(NUMBER_4))>;
+            key-positions = <25 26>;
         };
     };
 
