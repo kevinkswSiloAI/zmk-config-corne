@@ -166,10 +166,10 @@
         Functions {
             label = "FN";
             bindings = <
-&none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp F11  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp F12  &none
-                       &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp F1  &kp F2  &kp F3  &kp F4            &kp F5           &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &trans  &trans  &trans  &kp LC(NUMBER_0)  &kp LC(EQUAL)    &trans  &trans  &trans  &trans  &kp F11  &none
+&none  &trans  &trans  &trans  &trans            &kp LG(MINUS)    &trans  &trans  &trans  &trans  &kp F12  &none
+                       &trans  &trans            &trans           &trans  &trans  &trans
             >;
         };
 
